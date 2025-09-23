@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografia Gastronômica - [Seu Nome]</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #2c2c2c; /* тёмно-коричневый/чёрный текст */
+            background: #f5f3f0; /* мягкий бежевый фон */
+        }
+        header {
+            background: #e8e5e0; /* спокойный светлый бежевый */
+            text-align: center;
+            padding: 100px 20px 60px;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #3e2c23; /* насыщенный коричневый */
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #4a3d36; /* мягкий коричневый */
+        }
+        header a {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #a67c52; /* спокойный коричневый */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #3e2c23; /* коричневый */
+        }
+        .services, .portfolio, .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .service, .testimonial {
+            background: #e8e5e0; /* мягкий бежевый */
+            padding: 20px;
+            border-radius: 10px;
+            color: #2c2c2c;
+        }
+        .portfolio img {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: auto;
+        }
+        input, textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+            width: 100%;
+            background: #f5f3f0; /* светлый бежевый */
+            color: #2c2c2c;
+        }
+        button {
+            padding: 12px;
+            background: #a67c52; /* спокойный коричневый */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        footer {
+            background: #d9d6d1; /* мягкий серый */
+            color: #2c2c2c;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #8c6b4a; /* коричневатый акцент */
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .plans-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        max-width: 1000px;
+        margin: 40px auto;
+        text-align: left;
+        }
+
+        .plan {
+        background: #e8e5e0; /* светлый бежевый */
+        padding: 20px;
+        border-radius: 10px;
+        color: #2c2c2c;
+        }
+
+        .plan h4 {
+        text-align: center;
+        color: #3e2c23; /* коричневый */
+        margin-bottom: 15px;
+        }
+
+        .plan ul {
+        padding-left: 20px;
+    }
+    </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6S0L5NPY01"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6S0L5NPY01');
+</script>
+<body>
+
+<header>
+    <h1>Visualize a sua história culinária</h1>
+    <p>Fotografia gastronômica que transforma pratos em experiências visuais irresistíveis.</p>
+    <a href="#portfolio">Ver Portfólio</a>
+</header>
+
+<section id="about">
+    <h2>Quem Sou</h2>
+    <p>Olá! Sou Natalia, fotógrafa gastronómico e criador de conteúdos visuais sediado em Lisboa, ajudando restaurantes, cafés e projetos de cozinha portuguesa a contar as suas histórias através de imagens autênticas, apetitosas e eficazes.</p>
+</section>
+
+<section id="services">
+    <h2>Serviços</h2>
+    <div class="services">
+        <div class="service">Fotografia de pratos para restaurantes e cafés</div>
+        <div class="service">Fotografia de produtos alimentares para marcas</div>
+        <div class="service">Conteúdo visual para redes sociais (Instagram, Reels, Stories)</div>
+        <div class="service">Fotografia para e-commerce e catálogos</div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2>Portfólio</h2>
+    <div class="portfolio">
+        <img src="https://via.placeholder.com/400x300" alt="Exemplo de fotografia 1">
+        <img src="https://via.placeholder.com/400x300" alt="Exemplo de fotografia 2">
+        <img src="https://via.placeholder.com/400x300" alt="Exemplo de fotografia 3">
+        <img src="https://via.placeholder.com/400x300" alt="Exemplo de fotografia 4">
+    </div>
+</section>
+
+<section id="photo-session" style="text-align: center;">
+    <h3>1 Sessão</h3>
+    <ul style="display: inline-block; text-align: left; list-style-position: inside; padding: 0; margin: 0 auto;">
+        <li>Duração: até 3 horas</li>
+        <li>10 pratos diferentes</li>
+        <li>30 fotografias em alta resolução com pós-produção (edição profissional)</li>
+        <li>Entrega em formato otimizado para redes sociais e uso comercial</li>
+        <li>Sessão realizada no local do cliente (em Lisboa)</li>
+        <li>Preço: desde 100 €</li>
+    </ul>
+    <h3>Pacotes</h3>
+    <p>1 sessão, 3 Sessões, 5 Sessões</p>
+</section>
+<section id="plans">
+    <h2>📦 Planos Mensais para redes sociais</h2>
+    <p style="text-align: center;">Escolha o plano que melhor se adapta às necessidades do seu negócio gastronómico.</p>
+
+    <div class="plans-grid">
+        <div class="plan">
+            <h4>🍽️ Essencial</h4>
+            <ul>
+                <li>Ideal para presença consistente e profissional.</li>
+                <li>Criação e publicação de 10 imagens por mês</li>
+                <li>Ajuste de legendas e hashtags</li>
+            </ul>
+        </div>
+
+        <div class="plan">
+            <h4>🎬 Interativo</h4>
+            <ul>
+                <li>Para quem quer incluir vídeo e mais interação com o público.</li>
+                <li>Criação e publicação de 10 imagens</li>
+                <li>Produção de 1 Reels</li>
+                <li>Partilha nas Stories de 10 vídeos</li>
+            </ul>
+        </div>
+
+        <div class="plan">
+            <h4>🌟 Premium</h4>
+            <ul>
+                <li>Para uma presença digital completa e ativa.</li>
+                <li>Criação e publicação de 25 imagens</li>
+                <li>Produção de 2 Reels</li>
+                <li>Partilha nas Stories de 20 vídeos</li>
+                <li>Planeamento visual e sugestão de calendário editorial</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section id="ending">
+    <p>Vamos criar algo delicioso! Estou pronta para o ajudar a elevar o seu negócio alimentar com visuais cativantes. Entre em contacto para discutir o seu projeto e descobrir como posso ajudá-lo a atingir os seus objetivos.</p>
+
+    <p>Pode entrar em contacto por qualquer um dos meios abaixo ↓↓↓</p>
+    <p>Até breve!</p>
+</section>
+
+<section id="testimonials">
+    <h2>O Que Meus Clientes Dizem</h2>
+    <div class="testimonials">
+        <div class="testimonial">"As fotos transformaram nosso cardápio! Clientes não param de comentar." – Restaurante X</div>
+        <div class="testimonial">"Perfeitas para nossas redes sociais, cada imagem é uma obra de arte." – Marca Y</div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Vamos Conversar?</h2>
+    <form>
+        <input type="text" name="name" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" rows="5" placeholder="Mensagem" required></textarea>
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+    <p style="text-align:center; margin-top:20px;">Ou contate-me via <a href="mailto:seu@email.com">Email</a> ou WhatsApp: [número]</p>
+</section>
+
+<footer>
+    <p>Siga-me nas redes sociais:</p>
+    <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">LinkedIn</a>
+    <p>© 2025 [Seu Nome]. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
