@@ -271,6 +271,37 @@ document.addEventListener("__acceptrics_loaded", () => {
 });
 </script>
 <script src="https://cdn.acceptrics.com?n=ugdforjh"></script>
+    <script>
+  // К нам уже должен быть загружен Acceptrics код (ваш баннер), который вызывает событие, когда пользователь принимает/отклоняет.
+  
+  document.addEventListener("__acceptrics_user_updated", function(e) {
+    // Пример: e.detail = { consentGiven: true/false, categories: { analytics: true/false, marketing: true/false } }
+    const detail = e.detail || {};
+    const analyticsConsent = !!detail.categories?.analytics;  // или detail.consentGiven, в зависимости от реализации
+    const marketingConsent = !!detail.categories?.marketing;
+
+    if (analyticsConsent) {
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted'
+      });
+    } else {
+      gtag('consent', 'update', {
+        'analytics_storage': 'denied'
+      });
+    }
+
+    if (marketingConsent) {
+      gtag('consent', 'update', {
+        'ad_storage': 'granted'
+      });
+    } else {
+      gtag('consent', 'update', {
+        'ad_storage': 'denied'
+      });
+    }
+  });
+</script>
 </body>
 </html>
+
 
